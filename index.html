@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    #mana-bar {
+        width: 500px;
+        height: 23px;
+        background-color: lightgray;
+        position: relative;
+        border-radius: 50px;
+    }
+    #mana-fill {
+        height: 100%;
+        background-color: rgb(30, 30, 242);
+        width: 0;
+        border-radius: 50px;
+        transition: width .2s ease-in-out;
+    }
+</style>
+
+
+<body class="select-none flex flex-col items-center justify-center h-full w-full min-h-dvh " >
+    <div class="flex flex-col items-center justify-center">
+    <div  id="mana-bar">
+        <div class="" id="mana-fill"></div>
+        
+    </div>
+</div>
+    <p>Mana: <span id="mana-text">0</span>/100</p>
+<div class="flex mt-16 w4 gap-8">
+    <button  class="border border-gray-500 rounded-lg px-6 p-4 bg-sky-500"  id="useMana20">Q (-20)</button>
+    <button  class="border border-gray-500 rounded-lg px-6 p-4 bg-sky-500"  id="useMana30">W (-30)</button>
+    <button  class="border border-gray-500 rounded-lg px-6 p-4 bg-sky-500"  id="useMana40">E (-40)</button>
+    <button  class="border border-gray-500 rounded-lg px-6 p-4 bg-sky-500"  id="useMana50yenile">R (+50)</button>
+
+</div>
+    <script src="index.js"></script>
+
+</body>
+</html>
